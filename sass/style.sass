@@ -1,9 +1,16 @@
-$borderRed: 4px solid red
+$colorBlue: #63c6ae 
+$colorBlack: #242a2c
+$colorWhite: #fff
+$textTransformUppercase: uppercase
+$textDecorationNone: none
+$colFont: 'Helvetica Neue', Arial, sans-serif
+
 
 *
 	padding: 0
 	margin: 0
-body
+.header,
+.promo,
 	font-family: 'Sintony', sans-serif
 	font-size: 16px
 
@@ -12,19 +19,62 @@ body
 	margin: 0 auto	
 .promo-banner
 	width: 100%
+
 .promo-title 
 	font-size: 30px
-	text-transform: uppercase
+	text-transform: $textTransformUppercase
 	font-weight: normal
 	position: absolute
-    top: 281px
-    left:349px
+	top: 281px
+	left: 349px
+	padding: 15px
+	background: $colorBlue
+
 .promo-title a
-	color: #fff
-	text-decoration: none
+	color: $colorWhite
+	text-decoration: $textDecorationNone
+
 .promo-text
 	font-size: 17px
 	font-weight: normal
-	text-transform: capitalize
+	position: absolute
+	top: 366px
+	left: 367px
+	padding: 16px
+	display: block
+	width: 500px
+	text-align: center
+	background: $colorBlack 
+	color: $colorWhite
+
 .slider 
-	background: #63c6ae
+	background: $colorBlue
+
+.promo-button
+	font-size: 20px 	
+	border: 2px solid #fff
+	text-transform: $textTransformUppercase
+	padding: 10px
+	position: absolute
+	top: 485px
+	left: 549px
+	border-radius: 3px
+.promo-button a 
+	text-decoration: $textDecorationNone
+	color: $colorWhite
+.columns
+	font-family: $colFont
+	padding-top: 36px
+.border	
+	border-left: 1px solid #dbe1e7	
+.columns-title
+	font-size: 21px
+	color: #737c85
+.columns-text
+	font-size: 14px
+	color: #b3babf
+.two-columns 
+	background: #f9f9f9
+	font-family: $colFont
+.slider
+	padding: 20px	
